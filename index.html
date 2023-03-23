@@ -22,57 +22,18 @@
 
             <div class="collapse navbar-collapse main-background-color" id="navbarSupportedContent">
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 input-search" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2 input-search" type="search" placeholder="Search"
+                        aria-label="Search">
                     <button class="btn my-2 my-sm-0 purple-btn btn-search" type="submit">Search</button>
                 </form>
             </div>
         </nav>
-        <div class="bd-example">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item custom-carou-item active">
-                  <img src="./images/weather.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption custom-carou-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./images/weather.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="./images/weather.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4 d-flex align-items-center mt-3">
                     <div class="card second-background-color">
                         <div class="text-center mt-2">
-                            <img src="./images/wind.png" class="card-img-top detail-image" alt="...">
+                            <img src="./images/wind.png" class="card-img-top detail-image detail-img-today" alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Thurday, 20 March 2023</h5>
@@ -82,8 +43,8 @@
                                     <span class="ml-2">Rain Possibility</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-success progress-humidity" role="progressbar" style="width: 25%"
-                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-success progress-humidity" role="progressbar"
+                                        style="width: 25%" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="mb-4">
@@ -92,8 +53,8 @@
                                     <span class="ml-2">Snow Possibility</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar progress-snow bg-success" role="progressbar" style="width: 25%"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar progress-snow bg-success" role="progressbar"
+                                        style="width: 25%" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="">
@@ -102,11 +63,12 @@
                                     <span class="ml-2">Wind Speed (mi/h)</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar progress-wind bg-success" role="progressbar" style="width: 55%"
-                                         aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar progress-wind bg-success" role="progressbar"
+                                        style="width: 55%" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <p class="card-text mt-4 description-detail">Some quick example text to build on the card title and make up the
+                            <p class="card-text mt-4 description-detail">Some quick example text to build on the card
+                                title and make up the
                                 bulk
                                 of the card's content.</p>
                             <div class="location">
@@ -119,7 +81,7 @@
                 <div class="col-8">
                     <div class="d-flex justify-content-between mt-3">
                         <div class="">
-                            <h4>Forecast Weather</h4>
+                            <h4>Today At</h4>
                         </div>
                         <ul class="nav nav-pills d-flex justify-content-end">
                             <li class="nav-item">
@@ -134,58 +96,28 @@
                             </li>
                         </ul>
                     </div>
-
+                    <div class="container-fluid mt-3">
+                        <div class="row forecast-hours">
+                            <div class="col-2">
+                                <div class="card third-bg-color">
+                                    <h5 class="card-title text-center text-secondary pt-2">9:00 AM</h5>
+                                    <div class="text-center">
+                                        <img src="./images/wind.png" class="card-img-top smallIcon" alt="...">
+                                    </div>
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                        <span class="card-text font-weight-bold lg-text mr-2">30</span>
+                                        <img src="./images/celsius.png" alt="" class="smallIcon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h4>Forecast</h4>
+                    </div>
                     <div class="container-fluid mt-3">
                         <div class="row forecast-list">
                             <!-- <div class="col-3 mb-3">
-                                <div class="card third-bg-color">
-                                    <h5 class="card-title text-center pt-2">Fri</h5>
-                                    <div class="text-center">
-                                        <img src="./images/wind.png" class="card-img-top mdIcon" alt="...">
-                                    </div>
-                                    <div class="card-body d-flex align-items-center justify-content-center">
-                                        <span class="card-text font-weight-bold lg-text mr-2">30</span>
-                                        <img src="./images/celsius.png" alt="" class="smallIcon">
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- <div class="col-3 mb-3">
-                                <div class="card third-bg-color">
-                                    <h5 class="card-title text-center pt-2">Fri</h5>
-                                    <div class="text-center">
-                                        <img src="./images/wind.png" class="card-img-top mdIcon" alt="...">
-                                    </div>
-                                    <div class="card-body d-flex align-items-center justify-content-center">
-                                        <span class="card-text font-weight-bold lg-text mr-2">30</span>
-                                        <img src="./images/celsius.png" alt="" class="smallIcon">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 mb-3">
-                                <div class="card third-bg-color">
-                                    <h5 class="card-title text-center pt-2">Fri</h5>
-                                    <div class="text-center">
-                                        <img src="./images/wind.png" class="card-img-top mdIcon" alt="...">
-                                    </div>
-                                    <div class="card-body d-flex align-items-center justify-content-center">
-                                        <span class="card-text font-weight-bold lg-text mr-2">30</span>
-                                        <img src="./images/celsius.png" alt="" class="smallIcon">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 mb-3">
-                                <div class="card third-bg-color">
-                                    <h5 class="card-title text-center pt-2">Fri</h5>
-                                    <div class="text-center">
-                                        <img src="./images/wind.png" class="card-img-top mdIcon" alt="...">
-                                    </div>
-                                    <div class="card-body d-flex align-items-center justify-content-center">
-                                        <span class="card-text font-weight-bold lg-text mr-2">30</span>
-                                        <img src="./images/celsius.png" alt="" class="smallIcon">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3 mb-3">
                                 <div class="card third-bg-color">
                                     <h5 class="card-title text-center pt-2">Fri</h5>
                                     <div class="text-center">
@@ -203,34 +135,35 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-4 border-right border-color">
-                                    <p class="font-weight-bold d-inline-block">Contact information</p> 
+                                    <p class="font-weight-bold d-inline-block">Contact information</p>
                                     <a class="d-block mb-2" href="#">
-                                        <img src="./images/wind.png" alt="" class="smallIcon"> 
+                                        <img src="./images/wind.png" alt="" class="smallIcon">
                                         <span class="ml-2">Facebook</span>
                                     </a>
                                     <a class="d-block mb-2" href="#">
-                                        <img src="./images/wind.png" alt="" class="smallIcon"> 
+                                        <img src="./images/wind.png" alt="" class="smallIcon">
                                         <span class="ml-2">Instagram</span>
                                     </a>
                                     <a class="d-block mb-2" href="#">
-                                        <img src="./images/wind.png" alt="" class="smallIcon"> 
+                                        <img src="./images/wind.png" alt="" class="smallIcon">
                                         <span class="ml-2">Youtube</span>
                                     </a>
                                 </div>
                                 <div class="col-4 border-right border-color">
-                                    <span class="font-weight-bold d-inline-block">Copy right</span> 
+                                    <span class="font-weight-bold d-inline-block">Copy right</span>
                                     <p class="font-weight-bold mt-3">Powered By Group 10</p>
                                 </div>
                                 <div class="col-4 border-right">
                                     <span class="font-weight-bold d-inline-block">Reference</span>
-                                    <a class="d-block mt-3" href="https://developer.accuweather.com/">Accuweather API</a>
+                                    <a class="d-block mt-3" href="https://developer.accuweather.com/">Accuweather
+                                        API</a>
                                 </div>
                             </div>
                         </div>
-                     
+
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -248,4 +181,5 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 <script src="scripts.js"></script>
+
 </html>

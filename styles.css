@@ -1,32 +1,39 @@
 body {
     background-color: #E3DFFD;
 }
+
 .main-background-color {
     background-color: #E3DFFD !important;
 }
+
 .second-background-color {
     background-color: #E5D1FA;
 }
+
 .third-bg-color {
     background-color: #ECF2FF;
 }
+
 .detail-image {
-   width: 200px;
-   height: 200px;
+    width: 200px;
+    height: 180px;
 }
 
 .smallIcon {
-    width: 20px;
+    width: 30px;
     height: 20px;
 }
+
 .mdIcon {
     width: 130px;
     height: 100px;
 }
+
 .mediumIcon {
     width: 30px;
     height: 30px;
 }
+
 .location {
     position: relative;
 }
@@ -40,15 +47,19 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+
 .lg-text {
     font-size: 20px;
 }
-.carousel-inner{
+
+.carousel-inner {
     max-height: 95vh;
 }
+
 .custom-carou-item {
     position: relative;
 }
+
 .carousel-caption {
     position: absolute;
     top: 0;
@@ -66,6 +77,7 @@ body {
 .purple-btn {
     background-image: linear-gradient(40deg, #ff6ec4, #7873f5) !important;
 }
+
 .purple-btn:hover {
     filter: brightness(1.2);
 }
